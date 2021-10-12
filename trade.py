@@ -19,7 +19,7 @@ logging.basicConfig(
 
 
 def get_url():
-    redirect_url = "http://localhost/"
+    redirect_url = "<--TdAmeritrade_api_redirect_url-->"
     url = " https://auth.tdameritrade.com/auth?response_type=code&redirect_uri={}&client_id={}%40AMER.OAUTHAP".format(redirect_url, clientid)
     return webbrowser.open(url)
 
